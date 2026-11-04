@@ -1,0 +1,59 @@
+{
+  "training": {
+    "images": 1059,
+    "fallback": 522,
+    "fallback_rate": 0.4929,
+    "fallback_by_label": {
+      "01-minor": 165,
+      "02-moderate": 181,
+      "03-severe": 176
+    },
+    "median_crop_area_fraction": 0.5547,
+    "median_crop_short_side": 118.0,
+    "crops_short_side_under_64": 97,
+    "detections_per_image": {
+      "0": 522,
+      "1": 446,
+      "2": 83,
+      "3": 8
+    }
+  },
+  "validation": {
+    "images": 239,
+    "fallback": 120,
+    "fallback_rate": 0.5021,
+    "fallback_by_label": {
+      "01-minor": 31,
+      "02-moderate": 40,
+      "03-severe": 49
+    },
+    "median_crop_area_fraction": 0.6111,
+    "median_crop_short_side": 107.0,
+    "crops_short_side_under_64": 17,
+    "detections_per_image": {
+      "0": 120,
+      "1": 98,
+      "2": 17,
+      "3": 4
+    }
+  },
+  "test": {
+    "images": 245,
+    "fallback": 94,
+    "fallback_rate": 0.3837,
+    "fallback_by_label": {
+      "01-minor": 20,
+      "02-moderate": 35,
+      "03-severe": 39
+    },
+    "median_crop_area_fraction": 0.675,
+    "median_crop_short_side": 108.0,
+    "crops_short_side_under_64": 24,
+    "detections_per_image": {
+      "0": 94,
+      "1": 120,
+      "2": 27,
+      "3": 4
+    }
+  }
+}

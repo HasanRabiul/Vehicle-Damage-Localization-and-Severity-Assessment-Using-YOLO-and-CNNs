@@ -1,0 +1,49 @@
+{
+  "confidence": 0.25,
+  "matching_iou": 0.45,
+  "split": "val",
+  "source": "outputs/experiments/yolo11n_baseline_val_20261028T041058565345Z/validation/predictions.json",
+  "source_sha256": "6e812c67233fb52de354839768ada5a5d8797e8a280e4987d5629f822d479bec",
+  "source_rounding": "Exported boxes rounded to 3 decimals and scores to 5 decimals.",
+  "selection": "Filename-sorted candidates; up to six evenly spaced examples per category, excluding images selected in earlier categories. Categories can overlap; examples are illustrative, not prevalence estimates.",
+  "eligible_counts": {
+    "correct_localization": 265,
+    "false_positives": 295,
+    "missed_damage": 380,
+    "no_detections": 88
+  },
+  "selected": {
+    "correct_localization": [
+      "000017.jpg",
+      "000640.jpg",
+      "001331.jpg",
+      "002630.jpg",
+      "003302.jpg",
+      "003996.jpg"
+    ],
+    "false_positives": [
+      "000016.jpg",
+      "000810.jpg",
+      "001619.jpg",
+      "002280.jpg",
+      "002869.jpg",
+      "003991.jpg"
+    ],
+    "missed_damage": [
+      "000013.jpg",
+      "000853.jpg",
+      "001642.jpg",
+      "002278.jpg",
+      "002924.jpg",
+      "003999.jpg"
+    ],
+    "no_detections": [
+      "000107.jpg",
+      "001191.jpg",
+      "001947.jpg",
+      "002427.jpg",
+      "003433.jpg",
+      "003963.jpg"
+    ]
+  }
+}

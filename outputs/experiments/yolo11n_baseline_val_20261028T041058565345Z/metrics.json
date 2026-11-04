@@ -1,0 +1,28 @@
+{
+  "metrics/precision(B)": 0.6103729194957738,
+  "metrics/recall(B)": 0.4420871559633027,
+  "metrics/mAP50(B)": 0.502347926912334,
+  "metrics/mAP50-95(B)": 0.3126945730930342,
+  "fitness": 0.3126945730930342,
+  "speed_ms_per_image": {
+    "preprocess": 0.11766785597658636,
+    "inference": 13.853254893731417,
+    "loss": 6.218906491994858e-05,
+    "postprocess": 0.2820935758566599
+  },
+  "images": 810,
+  "confusion_matrix": [
+    [
+      1675.0,
+      121249.0
+    ],
+    [
+      69.0,
+      0.0
+    ]
+  ],
+  "confusion_matrix_axes": "Rows predicted, columns ground truth; class order damage, background",
+  "confusion_matrix_confidence": 0.001,
+  "confusion_matrix_matching_iou": 0.45,
+  "external_coco_evaluation": "Not run: faster_coco_eval is not installed. Metrics above use the Ultralytics internal evaluator."
+}

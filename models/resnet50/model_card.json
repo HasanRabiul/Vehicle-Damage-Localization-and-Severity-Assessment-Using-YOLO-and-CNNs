@@ -1,0 +1,23 @@
+{
+  "model": "ResNet50 (ImageNet IMAGENET1K_V2) fine-tuned for 3-class vehicle damage severity",
+  "labels": [
+    "01-minor",
+    "02-moderate",
+    "03-severe"
+  ],
+  "input": "whole vehicle image, RGB; Resize(256), CenterCrop(224), ImageNet mean/std normalisation",
+  "source_run": "outputs/experiments/severity_resnet50_whole_seed813_20261028T062016691868Z",
+  "checkpoint_sha256": "7ce5cd5442bb41b44267419392df2ed9687bb20082c9a4de54ae3c6238168745",
+  "selection": "Whole-image variant chosen over YOLO-crop variant on validation macro-F1; seed 813 had the highest validation macro-F1 of the three whole-image seeds.",
+  "selected_epoch": 2,
+  "validation_macro_f1": 0.6850273646447304,
+  "validation_accuracy": 0.6820083682008368,
+  "test_evaluation": "outputs/experiments/severity_eval_test_20261028T064849642083Z",
+  "test_note": "Reported test results are the 3-seed mean (macro-F1 0.583, accuracy 0.577); this single seed was not selected using test data.",
+  "dataset": "data/data3a filtered by outputs/experiments/severity_data3a_audit_20261028T055254716325Z/manifest.csv",
+  "limitations": [
+    "Trained on 1,059 low-resolution images with subjective labels",
+    "Moderate class recall is low (~0.43 on test)",
+    "Not validated for real insurance or safety decisions"
+  ]
+}

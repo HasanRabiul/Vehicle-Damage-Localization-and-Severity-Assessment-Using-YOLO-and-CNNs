@@ -1,0 +1,19 @@
+data: /Users/mdrabiulhasan/UofR/Fall 2026/DeepLearningComputerVision/Project/ENSE812_VehicleDamage/data/processed/cardd_yolo/data.yaml
+split: val
+imgsz: 640
+batch: 8
+device: cpu
+workers: 0
+conf: 0.001
+iou: 0.7
+max_det: 300
+plots: true
+save_json: true
+save_txt: false
+augment: false
+half: false
+seed: 0
+deterministic: true
+project: /Users/mdrabiulhasan/UofR/Fall 2026/DeepLearningComputerVision/Project/ENSE812_VehicleDamage/outputs/experiments/yolo11n_baseline_val_20261028T041058565345Z
+name: validation
+exist_ok: false

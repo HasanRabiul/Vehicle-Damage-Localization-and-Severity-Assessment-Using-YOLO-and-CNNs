@@ -1,0 +1,26 @@
+{
+  "manifest": "outputs/experiments/severity_data3a_audit_20261028T055254716325Z/manifest.csv",
+  "manifest_sha256": "192b0c47593106d6f03dbe1c7753646d0dda39f0a826ef6494e056fd60913a89",
+  "checkpoint": "runs/detect/runs/damage_detection/yolo11n_initial/weights/best.pt",
+  "checkpoint_sha256": "24286e6e0414b14731f7fe093505df01a514981b5d0f21bd3dd2a21a32a936d7",
+  "checkpoint_unchanged": true,
+  "imgsz": 640,
+  "conf": 0.25,
+  "iou": 0.7,
+  "max_det": 300,
+  "device": "mps",
+  "crop": "union of detections, padded 10% per side, clipped",
+  "fallback": "whole image when no detection",
+  "crop_format": "PNG (lossless)",
+  "panel_seed": 812,
+  "script_sha256": "5e70f526b9d20affa8ef214436e8205844be785dc7ba7883786e4b277a080d6e",
+  "python": "3.12.3 (main, Jul 11 2026, 20:40:01) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "torch": "2.13.0",
+    "torchvision": "0.28.0",
+    "ultralytics": "8.4.184",
+    "numpy": "1.26.4",
+    "pillow": "12.3.0"
+  }
+}

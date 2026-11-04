@@ -1,0 +1,172 @@
+{
+  "seed": 812,
+  "sampling": "Four random images per category from filename-sorted pools; categories may overlap.",
+  "pool_sizes": {
+    "correct_localization": 265,
+    "false_positives": 295,
+    "missed_damage": 380,
+    "no_detections": 88
+  },
+  "selected": [
+    {
+      "category": "correct_localization",
+      "image": "000225.jpg",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "detections": 1,
+      "ground_truth": 1,
+      "image_sha256": "251e7fe7d63fda3454b01dcf386832c3df04eabab779fabfdff56b1fafc48f0e"
+    },
+    {
+      "category": "correct_localization",
+      "image": "003248.jpg",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "detections": 1,
+      "ground_truth": 1,
+      "image_sha256": "daf7522f60a816bb66d41ec3e14cad137da481fb81be5006e1978527549779c0"
+    },
+    {
+      "category": "correct_localization",
+      "image": "002298.jpg",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "detections": 1,
+      "ground_truth": 1,
+      "image_sha256": "8da326d35d93db01c512dfa51cc3dbb1d014d2a38e802f98b661932cfa0861e6"
+    },
+    {
+      "category": "correct_localization",
+      "image": "003073.jpg",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "detections": 1,
+      "ground_truth": 1,
+      "image_sha256": "a4e1bae17ee6211035540f18c210cade59349648dd8917510f995d7ccb3d71f9"
+    },
+    {
+      "category": "false_positives",
+      "image": "001968.jpg",
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "detections": 2,
+      "ground_truth": 3,
+      "image_sha256": "346cb7e20e9137855d92bb553769d8b1a6d9a068f0bd8566d6cefa69536fd97b"
+    },
+    {
+      "category": "false_positives",
+      "image": "001542.jpg",
+      "tp": 1,
+      "fp": 2,
+      "fn": 0,
+      "detections": 3,
+      "ground_truth": 1,
+      "image_sha256": "59c8d5cc3527f39b327acd6c20a4114e2769282b1c8f55912adac2ac9f0d2925"
+    },
+    {
+      "category": "false_positives",
+      "image": "001489.jpg",
+      "tp": 0,
+      "fp": 2,
+      "fn": 5,
+      "detections": 2,
+      "ground_truth": 5,
+      "image_sha256": "b43205cac326166ba557f8ffb67f2d8b526d5532d668ea82bbb35ad2352d0639"
+    },
+    {
+      "category": "false_positives",
+      "image": "001599.jpg",
+      "tp": 1,
+      "fp": 1,
+      "fn": 4,
+      "detections": 2,
+      "ground_truth": 5,
+      "image_sha256": "f6fe2a196dbc2d44018ddfb6597292548608fd2ec15ab8662e7f463e8507da81"
+    },
+    {
+      "category": "missed_damage",
+      "image": "003614.jpg",
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "detections": 1,
+      "ground_truth": 3,
+      "image_sha256": "5fbd1cba491ca6337059d15b326e40b720ad999af5e8f4bf8009767adf7d3943"
+    },
+    {
+      "category": "missed_damage",
+      "image": "002171.jpg",
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "detections": 1,
+      "ground_truth": 3,
+      "image_sha256": "8424851bb7b94771f864bc6373b5eb61a3fd57e8438feeca836b500cd7f59237"
+    },
+    {
+      "category": "missed_damage",
+      "image": "001185.jpg",
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "detections": 1,
+      "ground_truth": 2,
+      "image_sha256": "b6caae1e0923c5e94f0012dc1b200c0fd38c7ce32c0aa90ed336f1c00f493d0b"
+    },
+    {
+      "category": "missed_damage",
+      "image": "000405.jpg",
+      "tp": 2,
+      "fp": 0,
+      "fn": 2,
+      "detections": 2,
+      "ground_truth": 4,
+      "image_sha256": "44d15f35ea6f390ab6b2d82452727af885bbadfeb141e8c1685e88cc1a487c64"
+    },
+    {
+      "category": "no_detections",
+      "image": "002359.jpg",
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "detections": 0,
+      "ground_truth": 3,
+      "image_sha256": "38a422e89edcf5591e1fa8215a398f22700301f817b834880d7f1722a39f0403"
+    },
+    {
+      "category": "no_detections",
+      "image": "002297.jpg",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "detections": 0,
+      "ground_truth": 2,
+      "image_sha256": "d3541f63e84ee2b60dd83be1a548789dd513be1ca761409a82663b1a424f0fe4"
+    },
+    {
+      "category": "no_detections",
+      "image": "002962.jpg",
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "detections": 0,
+      "ground_truth": 3,
+      "image_sha256": "796b797c38a0ff444e47f8390fe0737dbf9f0bb7f0b9cb6fa5e7770eb087006b"
+    },
+    {
+      "category": "no_detections",
+      "image": "002172.jpg",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "detections": 0,
+      "ground_truth": 1,
+      "image_sha256": "eb386e3bc1334cd9680cec8c3178564f965491e93e3dd610f10a16fc977d4861"
+    }
+  ]
+}

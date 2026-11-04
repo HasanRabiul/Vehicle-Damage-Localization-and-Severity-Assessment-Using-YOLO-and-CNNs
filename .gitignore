@@ -1,0 +1,22 @@
+# OS / Python
+.DS_Store
+__pycache__/
+*.pyc
+outputs/.matplotlib/
+
+# Datasets (CarDD and data3a are not redistributed; see their licences)
+data/
+
+# Model weights: only the 5 MB YOLO11n best.pt is tracked
+*.pt
+!runs/detect/runs/damage_detection/yolo11n_initial/weights/best.pt
+
+# Large regenerable image outputs
+runs/detect/outputs/
+outputs/experiments/severity_crops_*/crops/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.synctex.gz

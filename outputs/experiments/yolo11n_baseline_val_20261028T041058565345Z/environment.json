@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-10-28T04:10:58.572089+00:00",
+  "python": "3.12.3 (main, Jul 11 2026, 20:40:01) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "executable": "/Users/mdrabiulhasan/.pyenv/versions/3.12.3/bin/python3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "torch": "2.13.0",
+    "torchvision": "0.28.0",
+    "ultralytics": "8.4.184",
+    "numpy": "1.26.4",
+    "pillow": "12.3.0"
+  },
+  "mps_available": false,
+  "device": "cpu",
+  "checkpoint": "runs/detect/runs/damage_detection/yolo11n_initial/weights/best.pt",
+  "checkpoint_sha256": "24286e6e0414b14731f7fe093505df01a514981b5d0f21bd3dd2a21a32a936d7",
+  "dataset_yaml_sha256": "14c380b40da17fc8e945d7bac8fc5a41bd0c4700314f9433288ebb6e3a5449ae",
+  "script_sha256": "d85df8e5f823601c975579b1f598da16d91305492132b835fd43fe33f1b56b78",
+  "note": "Validation only. No training. Test split not evaluated. CPU/MPS may differ slightly.",
+  "status": "complete",
+  "finished_utc": "2026-10-28T04:11:26.474248+00:00",
+  "checkpoint_unchanged": true
+}

@@ -1,0 +1,25 @@
+{
+  "split": "validation",
+  "test_images_loaded": 0,
+  "device": "mps",
+  "manifest": "outputs/experiments/severity_data3a_audit_20261028T055254716325Z/manifest.csv",
+  "crops": "outputs/experiments/severity_crops_20261028T060434694326Z/crops.csv",
+  "runs": {
+    "crop_seed812": "outputs/experiments/severity_resnet50_crop_seed812_20261028T061042296720Z",
+    "crop_seed813": "outputs/experiments/severity_resnet50_crop_seed813_20261028T062221071425Z",
+    "crop_seed814": "outputs/experiments/severity_resnet50_crop_seed814_20261028T062915727350Z",
+    "whole_seed812": "outputs/experiments/severity_resnet50_whole_seed812_20261028T060711905312Z",
+    "whole_seed813": "outputs/experiments/severity_resnet50_whole_seed813_20261028T062016691868Z",
+    "whole_seed814": "outputs/experiments/severity_resnet50_whole_seed814_20261028T062727480693Z"
+  },
+  "checkpoints_sha256": {
+    "crop_seed812": "eba63239c4c5139a8a870669fe708bf8e24c2ccd4e07c667c49a7d16967c55ff",
+    "crop_seed813": "dcd2401fe5ef6cc954c60f9c17eb8634b65f997d23f1764210327b52b5ad0ec7",
+    "crop_seed814": "912b34e0903a26f3fedb6c496fc08a9492e8ee425a2e2229190f778f08ea680e",
+    "whole_seed812": "6f7697dfc37e4190c3d7189ead643efd72f9c60bcd81000bc81ff60130a8ab88",
+    "whole_seed813": "7ce5cd5442bb41b44267419392df2ed9687bb20082c9a4de54ae3c6238168745",
+    "whole_seed814": "f568496364c65f4adadbb414b7be88985e9c96b409cd8eed6606d5cfab83da56"
+  },
+  "script_sha256": "0fb39173e2addb50a0952d6cf45d111a8c84694781b94cac5ad8317895688663",
+  "eval_transform": "Resize(256), CenterCrop(224)"
+}

@@ -1,0 +1,35 @@
+{
+  "copied": {
+    "threshold_audit.png": "outputs/experiments/yolo11n_threshold_audit_20261028T041935763377Z/confidence_analysis.png",
+    "detector_missed_damage.png": "outputs/experiments/yolo11n_error_analysis_20261028T043110923039Z/missed_damage.png",
+    "detector_false_positives.png": "outputs/experiments/yolo11n_error_analysis_20261028T043110923039Z/false_positives.png",
+    "audit_cross_split.png": "outputs/experiments/severity_data3a_audit_20261028T055254716325Z/cross_split_duplicates.png",
+    "crop_samples.png": "outputs/experiments/severity_crops_20261028T060434694326Z/crop_samples.png",
+    "curves_whole_seed812.png": "outputs/experiments/severity_resnet50_whole_seed812_20261028T060711905312Z/curves.png",
+    "curves_crop_seed812.png": "outputs/experiments/severity_resnet50_crop_seed812_20261028T061042296720Z/curves.png",
+    "test_confusion.png": "outputs/experiments/severity_eval_test_20261028T064849642083Z/confusion_matrices.png",
+    "test_errors_whole.png": "outputs/experiments/severity_eval_test_20261028T064849642083Z/errors_whole.png"
+  },
+  "recall_by_damage_count": {
+    "1": {
+      "images": 381,
+      "recall": 0.8031496062992126
+    },
+    "2": {
+      "images": 184,
+      "recall": 0.44565217391304346
+    },
+    "3": {
+      "images": 113,
+      "recall": 0.37168141592920356
+    },
+    "4": {
+      "images": 69,
+      "recall": 0.3188405797101449
+    },
+    "5+": {
+      "images": 63,
+      "recall": 0.22105263157894736
+    }
+  }
+}

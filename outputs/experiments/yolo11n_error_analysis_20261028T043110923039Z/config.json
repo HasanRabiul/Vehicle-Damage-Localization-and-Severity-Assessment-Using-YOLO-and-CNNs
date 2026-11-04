@@ -1,0 +1,11 @@
+{
+  "source_audit": "outputs/experiments/yolo11n_threshold_audit_20261028T041935763377Z",
+  "predictions": "outputs/experiments/yolo11n_baseline_val_20261028T041058565345Z/validation/predictions.json",
+  "predictions_sha256": "6e812c67233fb52de354839768ada5a5d8797e8a280e4987d5629f822d479bec",
+  "script_sha256": "5c9ba51b976901138de6cef18faf7e493996774de5a4ac6945f226ee3de98854",
+  "confidence": 0.25,
+  "matching_iou": 0.45,
+  "seed": 812,
+  "split": "val",
+  "images": 810
+}

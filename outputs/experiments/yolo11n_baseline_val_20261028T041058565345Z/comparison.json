@@ -1,0 +1,22 @@
+{
+  "metrics/precision(B)": {
+    "saved_epoch_10": 0.60575,
+    "reproduced": 0.6103729194957738,
+    "difference": 0.0046229194957737585
+  },
+  "metrics/recall(B)": {
+    "saved_epoch_10": 0.44438,
+    "reproduced": 0.4420871559633027,
+    "difference": -0.0022928440366972724
+  },
+  "metrics/mAP50(B)": {
+    "saved_epoch_10": 0.50269,
+    "reproduced": 0.502347926912334,
+    "difference": -0.0003420730876659839
+  },
+  "metrics/mAP50-95(B)": {
+    "saved_epoch_10": 0.31288,
+    "reproduced": 0.3126945730930342,
+    "difference": -0.0001854269069657688
+  }
+}

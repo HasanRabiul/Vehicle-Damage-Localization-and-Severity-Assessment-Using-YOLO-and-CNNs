@@ -1,0 +1,197 @@
+{
+  "seed": 812,
+  "selected": [
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/01-minor/image11.jpeg",
+      "true": "01-minor",
+      "pred": "01-minor",
+      "confidence": 0.7086,
+      "fallback": false
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/01-minor/image51.jpeg",
+      "true": "01-minor",
+      "pred": "02-moderate",
+      "confidence": 0.4191,
+      "fallback": false
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/01-minor/image39.jpeg",
+      "true": "01-minor",
+      "pred": "02-moderate",
+      "confidence": 0.59,
+      "fallback": true
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/01-minor/image50.jpeg",
+      "true": "01-minor",
+      "pred": "02-moderate",
+      "confidence": 0.6092,
+      "fallback": false
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/02-moderate/image57.jpeg",
+      "true": "02-moderate",
+      "pred": "02-moderate",
+      "confidence": 0.4122,
+      "fallback": false
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/02-moderate/image3.jpeg",
+      "true": "02-moderate",
+      "pred": "03-severe",
+      "confidence": 0.5618,
+      "fallback": false
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/02-moderate/image29.jpeg",
+      "true": "02-moderate",
+      "pred": "01-minor",
+      "confidence": 0.9578,
+      "fallback": false
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/02-moderate/image34.jpeg",
+      "true": "02-moderate",
+      "pred": "01-minor",
+      "confidence": 0.8475,
+      "fallback": false
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/03-severe/image74.jpeg",
+      "true": "03-severe",
+      "pred": "03-severe",
+      "confidence": 0.8123,
+      "fallback": false
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/03-severe/image76.jpeg",
+      "true": "03-severe",
+      "pred": "02-moderate",
+      "confidence": 0.6206,
+      "fallback": false
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/03-severe/image52.jpeg",
+      "true": "03-severe",
+      "pred": "02-moderate",
+      "confidence": 0.5106,
+      "fallback": true
+    },
+    {
+      "variant": "whole",
+      "path": "data/data3a/test/03-severe/image17.jpg",
+      "true": "03-severe",
+      "pred": "02-moderate",
+      "confidence": 0.4578,
+      "fallback": false
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/01-minor/image63.jpeg",
+      "true": "01-minor",
+      "pred": "01-minor",
+      "confidence": 0.8543,
+      "fallback": false
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/01-minor/image37.jpeg",
+      "true": "01-minor",
+      "pred": "02-moderate",
+      "confidence": 0.8568,
+      "fallback": true
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/01-minor/image53.jpeg",
+      "true": "01-minor",
+      "pred": "03-severe",
+      "confidence": 0.4532,
+      "fallback": true
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/01-minor/image32.jpeg",
+      "true": "01-minor",
+      "pred": "02-moderate",
+      "confidence": 0.4393,
+      "fallback": false
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/02-moderate/image70.jpeg",
+      "true": "02-moderate",
+      "pred": "02-moderate",
+      "confidence": 0.5538,
+      "fallback": false
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/02-moderate/image7.jpeg",
+      "true": "02-moderate",
+      "pred": "01-minor",
+      "confidence": 0.4582,
+      "fallback": false
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/02-moderate/image66.jpeg",
+      "true": "02-moderate",
+      "pred": "03-severe",
+      "confidence": 0.737,
+      "fallback": false
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/02-moderate/image19.jpeg",
+      "true": "02-moderate",
+      "pred": "01-minor",
+      "confidence": 0.6478,
+      "fallback": false
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/03-severe/image42.jpeg",
+      "true": "03-severe",
+      "pred": "03-severe",
+      "confidence": 0.7797,
+      "fallback": true
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/03-severe/image73.jpeg",
+      "true": "03-severe",
+      "pred": "02-moderate",
+      "confidence": 0.9073,
+      "fallback": true
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/03-severe/image50.jpeg",
+      "true": "03-severe",
+      "pred": "02-moderate",
+      "confidence": 0.5795,
+      "fallback": false
+    },
+    {
+      "variant": "crop",
+      "path": "data/data3a/test/03-severe/image18.jpg",
+      "true": "03-severe",
+      "pred": "02-moderate",
+      "confidence": 0.5769,
+      "fallback": true
+    }
+  ]
+}

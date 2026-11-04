@@ -1,0 +1,12 @@
+{
+  "dataset": "data/data3a",
+  "cardd": "data/cardd/CarDD/CarDD_COCO",
+  "script_sha256": "5a0223cd24c840b95baa18c86d6a52b32af0c5da1ec3f72a1832b9e6ef7e8f19",
+  "hash": "dHash 64-bit on 9x8 grayscale",
+  "near_duplicate_max_distance": 4,
+  "keep_priority": [
+    "training",
+    "validation",
+    "test"
+  ]
+}

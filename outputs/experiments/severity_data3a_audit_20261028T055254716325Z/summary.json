@@ -1,0 +1,64 @@
+{
+  "images": 1599,
+  "included": 1543,
+  "excluded_by_reason": {
+    "same_split_duplicate_of": 16,
+    "label_conflict": 4,
+    "cardd_overlap": 27,
+    "cross_split_duplicate_of": 9
+  },
+  "counts": {
+    "training": {
+      "01-minor": {
+        "original": 362,
+        "included": 355
+      },
+      "02-moderate": {
+        "original": 370,
+        "included": 363
+      },
+      "03-severe": {
+        "original": 342,
+        "included": 341
+      }
+    },
+    "validation": {
+      "01-minor": {
+        "original": 82,
+        "included": 75
+      },
+      "02-moderate": {
+        "original": 75,
+        "included": 75
+      },
+      "03-severe": {
+        "original": 91,
+        "included": 89
+      }
+    },
+    "test": {
+      "01-minor": {
+        "original": 90,
+        "included": 67
+      },
+      "02-moderate": {
+        "original": 93,
+        "included": 86
+      },
+      "03-severe": {
+        "original": 94,
+        "included": 92
+      }
+    }
+  },
+  "duplicate_pairs": 28,
+  "cross_split_pairs": 9,
+  "label_conflict_pairs": 2,
+  "cardd_exact": 0,
+  "cardd_near": 42,
+  "cardd_near_by_split": {
+    "train2017": 25,
+    "val2017": 12,
+    "test2017": 5
+  }
+}

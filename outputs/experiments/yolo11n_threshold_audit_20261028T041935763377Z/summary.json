@@ -1,0 +1,98 @@
+[
+  {
+    "confidence": 0.001,
+    "matching_iou": 0.45,
+    "tp": 1676,
+    "fp": 120956,
+    "fn": 68,
+    "detections": 122632,
+    "precision": 0.013666905864700894,
+    "recall": 0.9610091743119266,
+    "f1": 0.026950537081108894,
+    "no_detection_images": 0
+  },
+  {
+    "confidence": 0.1,
+    "matching_iou": 0.45,
+    "tp": 1054,
+    "fp": 1736,
+    "fn": 690,
+    "detections": 2790,
+    "precision": 0.37777777777777777,
+    "recall": 0.6043577981651376,
+    "f1": 0.46493162770180857,
+    "no_detection_images": 3
+  },
+  {
+    "confidence": 0.25,
+    "matching_iou": 0.45,
+    "tp": 768,
+    "fp": 391,
+    "fn": 976,
+    "detections": 1159,
+    "precision": 0.6626402070750647,
+    "recall": 0.44036697247706424,
+    "f1": 0.529107819497072,
+    "no_detection_images": 88
+  },
+  {
+    "confidence": 0.5,
+    "matching_iou": 0.45,
+    "tp": 444,
+    "fp": 74,
+    "fn": 1300,
+    "detections": 518,
+    "precision": 0.8571428571428571,
+    "recall": 0.2545871559633027,
+    "f1": 0.3925729442970822,
+    "no_detection_images": 338
+  },
+  {
+    "confidence": 0.001,
+    "matching_iou": 0.5,
+    "tp": 1646,
+    "fp": 120986,
+    "fn": 98,
+    "detections": 122632,
+    "precision": 0.013422271511514124,
+    "recall": 0.9438073394495413,
+    "f1": 0.026468128899466134,
+    "no_detection_images": 0
+  },
+  {
+    "confidence": 0.1,
+    "matching_iou": 0.5,
+    "tp": 1017,
+    "fp": 1773,
+    "fn": 727,
+    "detections": 2790,
+    "precision": 0.36451612903225805,
+    "recall": 0.5831422018348624,
+    "f1": 0.4486104984561094,
+    "no_detection_images": 3
+  },
+  {
+    "confidence": 0.25,
+    "matching_iou": 0.5,
+    "tp": 744,
+    "fp": 415,
+    "fn": 1000,
+    "detections": 1159,
+    "precision": 0.6419327006039689,
+    "recall": 0.42660550458715596,
+    "f1": 0.5125732001377885,
+    "no_detection_images": 88
+  },
+  {
+    "confidence": 0.5,
+    "matching_iou": 0.5,
+    "tp": 440,
+    "fp": 78,
+    "fn": 1304,
+    "detections": 518,
+    "precision": 0.8494208494208494,
+    "recall": 0.25229357798165136,
+    "f1": 0.3890362511052166,
+    "no_detection_images": 338
+  }
+]

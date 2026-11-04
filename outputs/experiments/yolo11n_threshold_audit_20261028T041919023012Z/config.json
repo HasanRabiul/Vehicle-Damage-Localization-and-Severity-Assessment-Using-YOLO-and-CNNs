@@ -1,0 +1,24 @@
+{
+  "predictions": "outputs/experiments/yolo11n_baseline_val_20261028T041058565345Z/validation/predictions.json",
+  "predictions_sha256": "6e812c67233fb52de354839768ada5a5d8797e8a280e4987d5629f822d479bec",
+  "annotations": "data/cardd/CarDD/CarDD_COCO/annotations/instances_val2017.json",
+  "annotations_sha256": "25d445e2da4d86a14390d419d8147a1ace97f8f71f2e37cd2e7c6be79398a8d2",
+  "script_sha256": "cfa513dab77bd8c0430d144e7c3f56de99746cc1bf68099cbfe8c1eb85ac4e37",
+  "split": "val",
+  "images": 810,
+  "ground_truth_boxes": 1744,
+  "confidence_thresholds": [
+    0.001,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "matching_ious": [
+    0.45,
+    0.5
+  ],
+  "source_nms_iou": 0.7,
+  "source_max_det": 300,
+  "method": "Installed Ultralytics ConfusionMatrix; one-to-one confidence-ordered matching; strict score > threshold and IoU > threshold.",
+  "limitation": "Saved JSON rounds boxes to 3 decimals and confidence to 5 decimals. Thresholds operate on frozen post-NMS predictions, not fresh inference. No AP recalculation or threshold selection."
+}

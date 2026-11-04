@@ -1,0 +1,1 @@
+Preliminary audit using original COCO boxes. Use yolo11n_threshold_audit_20261028T041935763377Z instead: it uses the same processed YOLO labels as validation.
