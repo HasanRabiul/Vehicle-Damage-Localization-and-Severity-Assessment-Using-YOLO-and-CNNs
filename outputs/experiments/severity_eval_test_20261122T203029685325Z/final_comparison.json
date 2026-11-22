@@ -1,0 +1,16 @@
+{
+  "definition": "localized minus whole; each side is the mean over seeds 812-814; paired percentile bootstrap over the 245 test images, 2000 resamples, seed 812",
+  "final_configs": "final_configs.json",
+  "delta_F1": {
+    "estimate": -0.0149,
+    "ci95_low": -0.0606,
+    "ci95_high": 0.0304,
+    "fraction_draws_above_zero": 0.2615
+  },
+  "delta_R_moderate": {
+    "estimate": -0.0116,
+    "ci95_low": -0.0941,
+    "ci95_high": 0.0667,
+    "fraction_draws_above_zero": 0.3775
+  }
+}
