@@ -69,10 +69,11 @@ def run_epoch(model,loader,device,criterion,optimizer=None):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--variant',choices=['whole','crop'],required=True);ap.add_argument('--seed',type=int,required=True)
+    ap.add_argument('--crops',default=None,help='severity_crops_* folder; default: the newest one')
     args=ap.parse_args()
     random.seed(args.seed);np.random.seed(args.seed);torch.manual_seed(args.seed)
     audit=sorted((ROOT/'outputs/experiments').glob('severity_data3a_audit_*'))[-1]
-    crops_dir=sorted((ROOT/'outputs/experiments').glob('severity_crops_*'))[-1]
+    crops_dir=Path(args.crops).resolve() if args.crops else sorted((ROOT/'outputs/experiments').glob('severity_crops_*'))[-1]
     crops={r['path']:r for r in csv.DictReader((crops_dir/'crops.csv').open())}
     rows={'training':[],'validation':[]}
     for r in csv.DictReader((audit/'manifest.csv').open()):

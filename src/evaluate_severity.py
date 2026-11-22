@@ -31,11 +31,12 @@ def sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def latest_runs():
+def latest_runs(crops_csv):
     runs={}
     for d in sorted((ROOT/'outputs/experiments').glob('severity_resnet50_*_seed*_*')):
         if not (d/'best.pt').exists() or not (d/'val_metrics.json').exists():continue
         variant,seed=d.name.split('_')[2],int(d.name.split('_')[3][4:])
+        if variant=='crop' and json.loads((d/'config.json').read_text())['crops']!=crops_csv:continue  # only classifiers trained on these crops
         runs[(variant,seed)]=d  # sorted by timestamp, so the latest run wins
     missing=[k for k in [(v,s) for v in VARIANTS for s in SEEDS] if k not in runs]
     assert not missing,f'missing runs: {missing}'
@@ -58,9 +59,9 @@ def bootstrap(y,pred_sets,n=2000,seed=812):
 
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--split',choices=['validation','test'],default='validation');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--split',choices=['validation','test'],default='validation');ap.add_argument('--crops',default=None);args=ap.parse_args()
     audit=sorted((ROOT/'outputs/experiments').glob('severity_data3a_audit_*'))[-1]
-    crops_dir=sorted((ROOT/'outputs/experiments').glob('severity_crops_*'))[-1]
+    crops_dir=Path(args.crops).resolve() if args.crops else sorted((ROOT/'outputs/experiments').glob('severity_crops_*'))[-1]
     crops={r['path']:r for r in csv.DictReader((crops_dir/'crops.csv').open())}
     val=[r for r in csv.DictReader((audit/'manifest.csv').open()) if r['include']=='True' and r['split']==args.split]
     inputs={v:[dict(path=r['path'],label=r['label'],fallback=crops[r['path']]['fallback']=='True',
@@ -69,7 +70,7 @@ def main():
     out.mkdir(parents=True,exist_ok=False)
     device='mps' if torch.backends.mps.is_available() else 'cpu'
     tf=transforms.Compose([transforms.Resize(256),transforms.CenterCrop(224),transforms.ToTensor(),transforms.Normalize(MEAN,STD)])
-    runs=latest_runs();rows=[];preds={};reproduction={}
+    runs=latest_runs(str((crops_dir/'crops.csv').relative_to(ROOT)));rows=[];preds={};reproduction={}
     y=np.array([LABELS.index(r['label']) for r in val]);fb=np.array([r['fallback'] for r in inputs['whole']])
     for (trained_on,seed),run in sorted(runs.items()):
         model=models.resnet50(weights=None);model.fc=nn.Linear(model.fc.in_features,len(LABELS))

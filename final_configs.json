@@ -1,0 +1,35 @@
+{
+  "frozen_utc": "2026-11-22T20:22:47.558748+00:00",
+  "test_use": "Second and final use of the data3a test split (first: round 1, 2026-10-28).",
+  "detector": {
+    "checkpoint": "runs/detect/runs/damage_detection/yolo11s_e100/weights/best.pt",
+    "confidence": 0.4,
+    "selection": "outputs/experiments/detector_selection_20261122T180428259278Z"
+  },
+  "whole": {
+    "input": "whole image",
+    "classifier": "ResNet50, same recipe as round 1",
+    "seeds": [
+      812,
+      813,
+      814
+    ],
+    "note": "round-1 runs reused unchanged"
+  },
+  "localized": {
+    "input": "union of YOLO11s boxes (conf>=0.40) padded 30% per side; whole image when nothing is detected",
+    "crops": "outputs/experiments/severity_crops_20261122T184115887293Z",
+    "classifier": "ResNet50, same recipe",
+    "seeds": [
+      812,
+      813,
+      814
+    ],
+    "selection": "highest mean validation macro-F1 over seeds 812-813 among c40-p10 (0.633), c25-p10 (0.636), c40-p30 (0.664)"
+  },
+  "measures": [
+    "delta_F1 = macro-F1(localized) - macro-F1(whole)",
+    "delta_R_moderate = recall_moderate(localized) - recall_moderate(whole)"
+  ],
+  "statistics": "mean over 3 seeds; paired percentile bootstrap over test images, 2000 resamples, seed 812; 95% intervals"
+}

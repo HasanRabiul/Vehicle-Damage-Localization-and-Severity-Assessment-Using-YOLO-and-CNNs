@@ -1,0 +1,64 @@
+{
+  "training": {
+    "images": 1059,
+    "fallback": 514,
+    "fallback_rate": 0.4854,
+    "fallback_by_label": {
+      "01-minor": 184,
+      "02-moderate": 165,
+      "03-severe": 165
+    },
+    "median_crop_area_fraction": 0.6056,
+    "median_crop_short_side": 132.0,
+    "crops_short_side_under_64": 59,
+    "detections_per_image": {
+      "0": 514,
+      "1": 384,
+      "2": 123,
+      "3": 37,
+      "4": 1
+    }
+  },
+  "validation": {
+    "images": 239,
+    "fallback": 114,
+    "fallback_rate": 0.477,
+    "fallback_by_label": {
+      "01-minor": 36,
+      "02-moderate": 33,
+      "03-severe": 45
+    },
+    "median_crop_area_fraction": 0.6233,
+    "median_crop_short_side": 116.0,
+    "crops_short_side_under_64": 15,
+    "detections_per_image": {
+      "0": 114,
+      "1": 81,
+      "2": 30,
+      "3": 10,
+      "4": 3,
+      "5": 1
+    }
+  },
+  "test": {
+    "images": 245,
+    "fallback": 101,
+    "fallback_rate": 0.4122,
+    "fallback_by_label": {
+      "01-minor": 31,
+      "02-moderate": 34,
+      "03-severe": 36
+    },
+    "median_crop_area_fraction": 0.5942000000000001,
+    "median_crop_short_side": 122.0,
+    "crops_short_side_under_64": 18,
+    "detections_per_image": {
+      "0": 101,
+      "1": 107,
+      "2": 23,
+      "3": 12,
+      "4": 1,
+      "6": 1
+    }
+  }
+}

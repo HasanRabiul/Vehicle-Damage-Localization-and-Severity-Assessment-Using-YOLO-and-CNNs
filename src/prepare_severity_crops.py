@@ -1,4 +1,5 @@
 """Create YOLO damage crops for the data3a severity manifest; no metrics are computed and originals are only read."""
+import argparse
 import csv
 import hashlib
 import importlib.metadata
@@ -33,6 +34,9 @@ def sha256(path):
 
 
 def main():
+    global CHECKPOINT,CONF,PAD
+    ap=argparse.ArgumentParser();ap.add_argument('--checkpoint',default=str(CHECKPOINT));ap.add_argument('--conf',type=float,default=CONF);ap.add_argument('--pad',type=float,default=PAD)
+    args=ap.parse_args();CHECKPOINT,CONF,PAD=Path(args.checkpoint).resolve(),args.conf,args.pad
     audit=sorted((ROOT/'outputs/experiments').glob('severity_data3a_audit_*'))[-1]
     manifest=[r for r in csv.DictReader((audit/'manifest.csv').open()) if r['include']=='True']
     out=ROOT/'outputs/experiments'/('severity_crops_'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ'))
@@ -95,7 +99,7 @@ def main():
     fig.savefig(out/'crop_samples.png',dpi=130);plt.close(fig)
     (out/'config.json').write_text(json.dumps(dict(manifest=str((audit/'manifest.csv').relative_to(ROOT)),manifest_sha256=sha256(audit/'manifest.csv'),
         checkpoint=str(CHECKPOINT.relative_to(ROOT)),checkpoint_sha256=checkpoint_hash,checkpoint_unchanged=sha256(CHECKPOINT)==checkpoint_hash,
-        imgsz=640,conf=CONF,iou=.7,max_det=300,device=device,crop='union of detections, padded 10% per side, clipped',fallback='whole image when no detection',
+        imgsz=640,conf=CONF,iou=.7,max_det=300,device=device,crop=f'union of detections, padded {PAD:.0%} per side, clipped',fallback='whole image when no detection',
         crop_format='PNG (lossless)',panel_seed=812,script_sha256=sha256(Path(__file__)),python=sys.version,platform=platform.platform(),
         packages={p:importlib.metadata.version(p) for p in ['torch','torchvision','ultralytics','numpy','pillow']}),indent=2))
     (out/'README.md').write_text(f'# YOLO crops for severity classification\n\nThe yolo11n_initial checkpoint was run on every included image of the data3a manifest (imgsz 640, confidence > {CONF}, NMS IoU 0.7). Each image produces one crop: the union of its detections, padded by 10% of the union size per side and clipped. Images with no detection fall back to the whole image and are flagged in crops.csv; they are kept, not discarded.\n\nCrops for the test split are created so the pipeline can be evaluated later; no metrics were computed on any split. crop_samples.png shows training/validation examples only. Original images and the checkpoint are unchanged.\n')
