@@ -1,0 +1,32 @@
+{
+  "split": "CarDD validation",
+  "images": 810,
+  "thresholds": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "match_iou": 0.5,
+  "nms_iou": 0.7,
+  "imgsz": 640,
+  "candidates": {
+    "yolo11n_e10": {
+      "path": "runs/detect/runs/damage_detection/yolo11n_initial/weights/best.pt",
+      "sha256": "24286e6e0414b14731f7fe093505df01a514981b5d0f21bd3dd2a21a32a936d7"
+    },
+    "yolo11n_e100": {
+      "path": "runs/detect/runs/damage_detection/yolo11n_e100/weights/best.pt",
+      "sha256": "4e67dc0c32d5038de823ceb817be2b4ad510bfb9f1f3476057075a0dd6e98ea1"
+    },
+    "yolo11s_e100": {
+      "path": "runs/detect/runs/damage_detection/yolo11s_e100/weights/best.pt",
+      "sha256": "26ebd7fd9192f4964434f807cec63ad510c71b46e3f03a620cea7ecf6534f5a2"
+    }
+  },
+  "note": "Test split not read. best.pt epochs were also chosen on validation, so these numbers are optimistic."
+}

@@ -10,6 +10,8 @@ data/
 # Model weights: only the 5 MB YOLO11n best.pt is tracked
 *.pt
 !runs/detect/runs/damage_detection/yolo11n_initial/weights/best.pt
+!runs/detect/runs/damage_detection/yolo11n_e100/weights/best.pt
+!runs/detect/runs/damage_detection/yolo11s_e100/weights/best.pt
 
 # Large regenerable image outputs
 runs/detect/outputs/

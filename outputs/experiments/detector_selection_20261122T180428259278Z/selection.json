@@ -1,0 +1,70 @@
+{
+  "rule": "Per model, the threshold with the highest validation F1 (ties: lower threshold). Choose the highest-F1 model, unless it beats yolo11n_e100 by less than 0.01 F1, then keep yolo11n_e100.",
+  "best_per_model": {
+    "yolo11n_e10": {
+      "model": "yolo11n_e10",
+      "confidence": 0.25,
+      "tp": 756,
+      "fp": 436,
+      "fn": 988,
+      "precision": 0.6342,
+      "recall": 0.4335,
+      "f1": 0.515,
+      "no_detection_images": 81,
+      "recall_gt_1": 0.7848,
+      "recall_gt_2": 0.4538,
+      "recall_gt_3": 0.354,
+      "recall_gt_4": 0.3188,
+      "recall_gt_5plus": 0.2158
+    },
+    "yolo11n_e100": {
+      "model": "yolo11n_e100",
+      "confidence": 0.4,
+      "tp": 920,
+      "fp": 385,
+      "fn": 824,
+      "precision": 0.705,
+      "recall": 0.5275,
+      "f1": 0.6035,
+      "no_detection_images": 41,
+      "recall_gt_1": 0.8583,
+      "recall_gt_2": 0.5516,
+      "recall_gt_3": 0.4307,
+      "recall_gt_4": 0.4457,
+      "recall_gt_5plus": 0.3184
+    },
+    "yolo11s_e100": {
+      "model": "yolo11s_e100",
+      "confidence": 0.4,
+      "tp": 965,
+      "fp": 399,
+      "fn": 779,
+      "precision": 0.7075,
+      "recall": 0.5533,
+      "f1": 0.621,
+      "no_detection_images": 43,
+      "recall_gt_1": 0.8714,
+      "recall_gt_2": 0.5408,
+      "recall_gt_3": 0.4631,
+      "recall_gt_4": 0.4674,
+      "recall_gt_5plus": 0.3895
+    }
+  },
+  "chosen": {
+    "model": "yolo11s_e100",
+    "confidence": 0.4,
+    "tp": 965,
+    "fp": 399,
+    "fn": 779,
+    "precision": 0.7075,
+    "recall": 0.5533,
+    "f1": 0.621,
+    "no_detection_images": 43,
+    "recall_gt_1": 0.8714,
+    "recall_gt_2": 0.5408,
+    "recall_gt_3": 0.4631,
+    "recall_gt_4": 0.4674,
+    "recall_gt_5plus": 0.3895
+  },
+  "checkpoint": "runs/detect/runs/damage_detection/yolo11s_e100/weights/best.pt"
+}
