@@ -1,0 +1,151 @@
+{
+  "test_evaluation": "outputs/experiments/severity_eval_test_20261122T203029685325Z",
+  "per_class": [
+    {
+      "input": "whole",
+      "label": "minor",
+      "support": 67,
+      "precision": 0.657,
+      "recall": 0.806,
+      "f1": 0.7234
+    },
+    {
+      "input": "whole",
+      "label": "moderate",
+      "support": 86,
+      "precision": 0.4336,
+      "recall": 0.4264,
+      "f1": 0.4294
+    },
+    {
+      "input": "whole",
+      "label": "severe",
+      "support": 92,
+      "precision": 0.6512,
+      "recall": 0.5507,
+      "f1": 0.5949
+    },
+    {
+      "input": "crop",
+      "label": "minor",
+      "support": 67,
+      "precision": 0.6483,
+      "recall": 0.7463,
+      "f1": 0.6928
+    },
+    {
+      "input": "crop",
+      "label": "moderate",
+      "support": 86,
+      "precision": 0.4262,
+      "recall": 0.4147,
+      "f1": 0.42
+    },
+    {
+      "input": "crop",
+      "label": "severe",
+      "support": 92,
+      "precision": 0.6187,
+      "recall": 0.5652,
+      "f1": 0.5902
+    }
+  ],
+  "subsets": [
+    {
+      "subset": "all",
+      "n": 245,
+      "whole_macro_f1": 0.5826,
+      "whole_accuracy": 0.5769,
+      "crop_macro_f1": 0.5677,
+      "crop_accuracy": 0.5619,
+      "crop_minus_whole_f1": -0.0149
+    },
+    {
+      "subset": "detected",
+      "n": 144,
+      "whole_macro_f1": 0.5673,
+      "whole_accuracy": 0.5602,
+      "crop_macro_f1": 0.557,
+      "crop_accuracy": 0.5486,
+      "crop_minus_whole_f1": -0.0103
+    },
+    {
+      "subset": "fallback",
+      "n": 101,
+      "whole_macro_f1": 0.6019,
+      "whole_accuracy": 0.6007,
+      "crop_macro_f1": 0.5778,
+      "crop_accuracy": 0.5809,
+      "crop_minus_whole_f1": -0.0241
+    },
+    {
+      "subset": "detected, 1 box",
+      "n": 107,
+      "whole_macro_f1": 0.5723,
+      "whole_accuracy": 0.567,
+      "crop_macro_f1": 0.5262,
+      "crop_accuracy": 0.5202,
+      "crop_minus_whole_f1": -0.0461
+    },
+    {
+      "subset": "detected, 2+ boxes",
+      "n": 37,
+      "whole_macro_f1": 0.5363,
+      "whole_accuracy": 0.5405,
+      "crop_macro_f1": 0.6414,
+      "crop_accuracy": 0.6306,
+      "crop_minus_whole_f1": 0.1051
+    },
+    {
+      "subset": "crop < 1/3 of image",
+      "n": 45,
+      "whole_macro_f1": 0.5313,
+      "whole_accuracy": 0.5259,
+      "crop_macro_f1": 0.432,
+      "crop_accuracy": 0.4296,
+      "crop_minus_whole_f1": -0.0993
+    },
+    {
+      "subset": "crop 1/3 to 2/3",
+      "n": 32,
+      "whole_macro_f1": 0.5307,
+      "whole_accuracy": 0.5417,
+      "crop_macro_f1": 0.4376,
+      "crop_accuracy": 0.4583,
+      "crop_minus_whole_f1": -0.0931
+    },
+    {
+      "subset": "crop >= 2/3 of image",
+      "n": 67,
+      "whole_macro_f1": 0.6024,
+      "whole_accuracy": 0.592,
+      "crop_macro_f1": 0.6811,
+      "crop_accuracy": 0.6716,
+      "crop_minus_whole_f1": 0.0787
+    }
+  ],
+  "moderate_predicted_as": {
+    "whole": {
+      "minor": 0.2597,
+      "moderate": 0.4264,
+      "severe": 0.314
+    },
+    "crop": {
+      "minor": 0.2248,
+      "moderate": 0.4147,
+      "severe": 0.3605
+    }
+  },
+  "gradcam": {
+    "images": 123,
+    "mean_ratio": 1.205,
+    "median_ratio": 1.103,
+    "fraction_above_1": 0.634,
+    "per_seed": {
+      "812": 1.266,
+      "813": 1.171,
+      "814": 1.179
+    },
+    "meaning": "attention inside YOLO boxes divided by box area; 1 = no preference for the damage, >1 = focuses on it"
+  }
+}

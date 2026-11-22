@@ -1,0 +1,7 @@
+input,label,support,precision,recall,f1
+whole,minor,67,0.657,0.806,0.7234
+whole,moderate,86,0.4336,0.4264,0.4294
+whole,severe,92,0.6512,0.5507,0.5949
+crop,minor,67,0.6483,0.7463,0.6928
+crop,moderate,86,0.4262,0.4147,0.42
+crop,severe,92,0.6187,0.5652,0.5902
