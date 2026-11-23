@@ -1,0 +1,3 @@
+model,confidence,precision,recall,f1,tp,fp,fn,no_detection_images,recall_dent,recall_scratch,recall_crack,recall_glass_shatter,recall_lamp_broken,recall_tire_flat
+yolo11s_e100,0.4,0.7439,0.6178,0.675,485,167,300,8,0.5678,0.5863,0.3286,0.9718,0.7536,0.8438
+yolo11s_6cls_e100,0.4,0.742,0.6522,0.6942,512,178,273,6,0.6314,0.57,0.4571,1.0,0.8116,0.9062
